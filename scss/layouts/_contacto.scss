@@ -1,0 +1,36 @@
+.contact-hero {
+    gap: 2em;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    @media only screen and (max-width: 992px) {
+        flex-direction: column;
+    }
+
+    .contact-card {
+        width: 45%;
+        height: 500px;
+        display: flex;
+
+
+        @media only screen and (max-width: 992px) {
+            display: none;
+
+        img {
+            height: 100%;
+            
+        }
+    }
+
+    .contact-card2 {
+        width: 50%;
+        height: 500px;
+
+        iframe {
+            border-radius: 20px;
+        }
+
+        }
+    }
+}
