@@ -7,21 +7,21 @@
     height: 100%;
 }
 
-.conteiner-servicios{
+.conteiner-servicios {
     padding-top: 80px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 
-    .h1-servicios{
+    .h1-servicios {
         font-family: $bebas;
         font-size: 3rem;
         font-style: italic;
         color: aliceblue;
     }
 
-    .p-servicios{
+    .p-servicios {
         width: 80%;
         font-family: $montse;
         font-weight: 300;
@@ -40,27 +40,28 @@
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-    
-    
-    
+
+
+
         .h2-index {
             font-family: $bebas;
             font-style: italic;
             font-size: 3rem;
             color: $primary-color;
+
             @media only screen and (max-width: 992px) {
                 font-size: 2rem;
             }
         }
-    
+
         &-cards {
             display: flex;
             flex-wrap: wrap;
             width: 100%;
             justify-content: space-evenly;
             gap: 10px;
-    
-    
+
+
             .card-serv {
                 display: flex;
                 flex-direction: column;
@@ -75,10 +76,7 @@
                 background-color: rgba(255, 255, 255, 0.066);
                 box-shadow: 0 0px 20px rgba(255, 255, 255, 0.149);
 
-                @media only screen and (max-width: 576px) {
-                    width: 45%;
-                }
-    
+
                 p {
                     font-family: $montse;
                     color: white;
@@ -86,25 +84,22 @@
                     font-weight: 300;
                     height: 100px;
 
-                    @media only screen and (max-width: 576px) {
-                       font-size: .6rem;
-                    }
-                    
-    
+
                 }
-    
+
                 h3 {
                     height: 70px;
                     font-family: $montse;
                     font-weight: 700;
                     font-size: 2rem;
                     color: whitesmoke;
+
                     @media only screen and (max-width: 992px) {
                         font-size: 1rem;
                         height: auto;
                     }
                 }
-    
+
                 img {
                     width: 100%;
                     height: 300px;
@@ -112,9 +107,9 @@
                     border-radius: 7px;
                     align-self: center;
 
-                    @media only screen and (max-width: 576px) {
-                        height: 100px;
-                     }
+                    @media only screen and (max-width: 992px) {
+                        height: 150px;
+                    }
                 }
             }
         }
@@ -123,4 +118,95 @@
 
 }
 
+.modal-serv {
 
+    .modal-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+        .personal-card {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+
+            &-description {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+
+
+                h3 {
+                    color: $primary-color;
+                    font-family: $montse;
+                    font-weight: 700;
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-family: $montse;
+                    font-weight: 300;
+                    font-size: .9rem;
+                    color: aliceblue;
+                }
+            }
+
+            .img-round {
+                width: 100px;
+                height: 100px;
+                overflow: hidden;
+                border-radius: 50%;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            .form_serv {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    color: aliceblue;
+                    font-family: $montse;
+                }
+
+                input {
+                    width: 100%;
+                    padding: .5rem;
+                    padding-left: 2rem;
+                    font-family: $montse;
+                    color: rgba(255, 255, 255, 0.356);
+                    border: 1px solid white;
+                    border-radius: 40px;
+                    background-color: rgba(0, 0, 0, 0);
+                }
+
+                textarea {
+                    width: 100%;
+                    padding: .5rem;
+                    padding-left: 2rem;
+                    font-family: $montse;
+                    color: rgba(255, 255, 255, 0.356);
+                    border: 1px solid white;
+                    border-radius: 10px;
+                    background-color: rgba(0, 0, 0, 0);
+                }
+
+            }
+        }
+
+    }
+}
