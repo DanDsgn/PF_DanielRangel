@@ -120,7 +120,7 @@
 }
 @media only screen and (max-width: 992px) {
   .hero-card {
-    width: 130%;
+    width: 100%;
     height: 300px;
     position: absolute;
   }
@@ -286,6 +286,31 @@
   }
 }
 
+.modal .modal-header h2 {
+  font-family: "Bebas Neue", sans-serif;
+  color: #00BBDD;
+  font-size: 3rem;
+  font-style: italic;
+}
+.modal .modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.modal .modal-body img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.modal .modal-body p {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
 .article_main_serv {
   background-image: linear-gradient(0deg, rgb(15, 15, 17) 0%, rgb(15, 15, 17) 35%, rgba(15, 15, 17, 0.1349133403) 100%), url("../assets/images/index/bgindex.jpg");
   background-position: center;
@@ -359,13 +384,25 @@
   background-color: rgba(255, 255, 255, 0.066);
   box-shadow: 0 0px 20px rgba(255, 255, 255, 0.149);
 }
+@media only screen and (max-width: 576px) {
+  .conteiner-servicios .servicios-serv-cards .card-serv {
+    width: 45%;
+  }
+}
 .conteiner-servicios .servicios-serv-cards .card-serv p {
   font-family: "Montserrat", sans-serif;
   color: white;
   font-size: 0.9rem;
   font-weight: 300;
+  height: 100px;
+}
+@media only screen and (max-width: 576px) {
+  .conteiner-servicios .servicios-serv-cards .card-serv p {
+    font-size: 0.6rem;
+  }
 }
 .conteiner-servicios .servicios-serv-cards .card-serv h3 {
+  height: 70px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 2rem;
@@ -374,6 +411,7 @@
 @media only screen and (max-width: 992px) {
   .conteiner-servicios .servicios-serv-cards .card-serv h3 {
     font-size: 1rem;
+    height: auto;
   }
 }
 .conteiner-servicios .servicios-serv-cards .card-serv img {
@@ -382,6 +420,11 @@
   object-fit: cover;
   border-radius: 7px;
   align-self: center;
+}
+@media only screen and (max-width: 576px) {
+  .conteiner-servicios .servicios-serv-cards .card-serv img {
+    height: 100px;
+  }
 }
 
 .gallery {

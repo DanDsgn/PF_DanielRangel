@@ -74,22 +74,34 @@
                 backdrop-filter: blur(15px);
                 background-color: rgba(255, 255, 255, 0.066);
                 box-shadow: 0 0px 20px rgba(255, 255, 255, 0.149);
+
+                @media only screen and (max-width: 576px) {
+                    width: 45%;
+                }
     
                 p {
                     font-family: $montse;
                     color: white;
                     font-size: .9rem;
                     font-weight: 300;
+                    height: 100px;
+
+                    @media only screen and (max-width: 576px) {
+                       font-size: .6rem;
+                    }
+                    
     
                 }
     
                 h3 {
+                    height: 70px;
                     font-family: $montse;
                     font-weight: 700;
                     font-size: 2rem;
                     color: whitesmoke;
                     @media only screen and (max-width: 992px) {
                         font-size: 1rem;
+                        height: auto;
                     }
                 }
     
@@ -99,6 +111,10 @@
                     object-fit: cover;
                     border-radius: 7px;
                     align-self: center;
+
+                    @media only screen and (max-width: 576px) {
+                        height: 100px;
+                     }
                 }
             }
         }
